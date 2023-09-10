@@ -1,0 +1,22 @@
+This is a group assignent and as such should involve the collaboration of at least 3 developers.
+
+Flow: The first page your user should see is the landing page. From the landing page, I should get to the search page and then when I click on an item in the search page, I should be taken to the individual campground page.
+
+All designs for the screens are in the designs folder and the images or icons needed are in the assets folder.
+
+Note:
+- Your page must be responsive. Using tailwind would give you a higher score. Based on the design images, we have 3 separate views for 3 screen sizes.
+
+- Your campground data must not be hardcoded!
+hint: Create an array of campgrounds, map through it and render it on your page.
+
+
+Key functionalities:
+- I should be able to search through your campgrounds and it has to function.
+- When i click on a campground card, it should take me to the individual campground page and show me details of the capground that I selected.
+
+
+How to implement:
+- Build the structure of the pages first
+- Implement responsiveness
+- Implement the necessary functionalities.
