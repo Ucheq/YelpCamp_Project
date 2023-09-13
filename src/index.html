@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../dist/output.css">
-</head>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
 
-<body>
-</body>
+  <body>
+    <div class="grid grid-rows-2 sm:grid-rows-2 md:grid-rows-2 lg:grid-cols-2">
+      <div class="ml-36 mr-28">
+        <img class="hover:animate-bounce pt-8 pb-40" src="../Assets/Logo.svg" />
+        <h1 class="font-bold text-5xl">Explore the best camps on Earth.</h1>
+        <p class="pt-4 pb-4">
+          YelpCamp is a curated list of the best camping spots on Earth.
+          Unfiltered and Unbiased reviews
+        </p>
+
+        <ul class="pl-7 list-image-[url(../Assets/Checkmark.svg)]">
+          <li>Add your own camp suggestions.</li>
+          <li>Leave reviews and experiences.</li>
+          <li>See locations for all camps.</li>
+        </ul>
+
+        <div class="pt-9 pb-16">
+          <button class="bg-black text-white text-sm font-medium w-44 h-12 rounded">View Campgrounds</button>
+        </div>
+        
+        <p>Partnered with:</p>
+        
+        <div class="flex">
+          <img src="../Assets/Airbnb.svg"/>
+          <img src="../Assets/Booking.svg"/>
+          <img src="../Assets/Plum Guide.svg"/>
+        </div>
+      </div>
+
+      <div class="order-first sm:order-first md:order-first lg:order-last">
+        <img src="../Assets/Hero Image.jpg" />
+      </div>
+    </div>
+  </body>
 </html>
