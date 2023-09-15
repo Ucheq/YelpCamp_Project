@@ -6,26 +6,30 @@
     <title>YelpCamp_Campgrounds</title>
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  
   <body>
     <!-- LANDING PAGE -->
     <div class="grid lg:grid-cols-2 md:grid-rows-2 grid-rows-2">
-      <div class="">
-        <div class="">
-          <!-- LOGO -->
+      <div class="w-full p-36 md:p-24 sm:p-20 pr-24">
+        <!-- LOGO -->
+        <!-- <div class="">
           <img
-            class="lg:visible md:hidden hidden hover:animate-bounce pt-8 pb-40"
+            class="visible md:hidden sm:hidden hover:animate-bounce pt-8 pb-40"
             src="../Assets/Logo.svg"
           />
-        </div>
+        </div> -->
         <!-- ABOUT -->
-        <div class="">
+        <div class="order-first md:order-none sm:order-none">
+          <img
+            class="visible md:hidden sm:hidden hover:animate-bounce pt-8 pb-40"
+            src="../Assets/Logo.svg"
+          />
           <h1 class="font-bold text-5xl">Explore the best camps on Earth.</h1>
           <p class="pt-4 pb-4">
             YelpCamp is a curated list of the best camping spots on Earth.
             Unfiltered and Unbiased reviews
           </p>
         </div>
+
         <!-- LIST -->
         <div>
           <ul class="pl-7 list-image-[url(../Assets/Checkmark.svg)]">
@@ -51,10 +55,6 @@
           <img src="../Assets/Plum Guide.svg" />
         </div>
       </div>
-      <!-- The Image section -->
-      <!-- <div class="lg:order-1 md:order-none order-none">
-        <img class="w-full" src="../Assets/Hero Image.jpg" />
-      </div> -->
       <div class="lg:order-none md:order-first order-first">
         <img
           class="lg:hidden md:visible visible hover:animate-bounce p-12"
