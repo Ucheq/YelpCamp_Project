@@ -5,3 +5,6 @@
 .input{
     border: 1px solid lightgray;
 }
+.popup{
+    z-index: 1;
+}

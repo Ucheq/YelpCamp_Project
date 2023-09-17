@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../dist/output.css">
+
+</head>
+<body>
+       <!-- nav bar -->
+    <nav class="bg-gray-100 py-4 px-6 flex justify-between w-[90%] lg:w-[56%] mx-auto items-center">
+        <div class="flex items-center">
+            <img src="../Assets/Logo.svg" alt="Logo" class="h-8">
+            <a href="#" class="ml-4 text-ash hover:no-underline hover:text-ash hidden lg:block">Home</a>
+        </div>
+        <button id="hamburger-menu" class="lg:hidden">
+            ☰ <!-- Hamburger icon -->
+        </button>
+        <div id="menu-items" class="hidden lg:flex items-center space-x-4">
+            <a href="#" class="text-ash hover:no-underline hover:text-ash mr-4">Login</a>
+            <button class="bg-black text-white py-2 px-4 hover:bg-opacity-80">Create Account</button>
+        </div>
+    </nav>
+
+    <section class="w-[90%] lg:w-[70%] mx-auto ">
+        
+            <div class="w-full lg:w-4/5 mx-auto flex lg:flex-row gap-10 flex-col justify-around">
+                <div id="mapContainer" class="lg:w-auto md:w-full w-full lg:order-1 md:order-2 order-2">
+                    <!-- Embed an Earth map here -->
+                    <img src="/Assets/Map.png" alt="map" class="border-2 border-solid p-10 w-full" lazy="loading">
+                </div>
+                <div class="grid grid-flow-row gap-10 w-full lg:w-[60%] lg:order-2 md:order-1 order-1">
+                    <div id="detailsContainer" class="p-5 border-2 border-solid rounded items-center w-full">
+                        <!-- Detailed campground information will be displayed here -->
+                    </div>
+                    <div id="feedbackContainer" class="p-10 border-2 border-solid rounded items-center w-full">
+                        <!-- Customer feedbacks go here -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div id="popupContainer" class="popup hidden fixed top-0 left-0 w-full h-full">
+        <div class="popup-content bg-white absolute top-[80%] right-[50%] transform translate-x-1/2 -translate-y-1/2 p-5 rounded-lg shadow-lg">
+            <span class="close-button absolute top-[10px] right-[10px] cursor-pointer text-2xl" id="closePopupButton">&times;</span>
+            <div class="flex flex-col">
+                <input class="input p-2 mb-5 border-b-2 w-3/4 md:w-38 " placeholder="&#xF002; Name of Reviewer" style="font-family:Arial, FontAwesome" type="text" id="nameOfReviewer"/>
+                <input class="input p-2 mb-5 border-b-2 w-3/4 md:w-38 " type="text" placeholder="&#xF002; Description" style="font-family:Arial, FontAwesome" id="description">
+                <button id="addReview" type="button" class="bg-black text-white rounded p-3">Review</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="carddetails.js" async></script>
+    
+</body>
+</html>
