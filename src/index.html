@@ -8,72 +8,56 @@
   </head>
   <body>
     <!-- LANDING PAGE -->
-    <div class="grid lg:grid-cols-2 md:grid-rows-2 grid-rows-2">
-      <div class="w-full p-36 md:p-24 sm:p-20 pr-24">
-        <!-- LOGO -->
-        <!-- <div class="">
-          <img
-            class="visible md:hidden sm:hidden hover:animate-bounce pt-8 pb-40"
-            src="../Assets/Logo.svg"
-          />
-        </div> -->
-        <!-- ABOUT -->
-        <div class="w-1/2">
-          <img
-            class="visible md:hidden sm:hidden hover:animate-bounce pt-8 pb-40"
-            src="../Assets/Logo.svg"
-          />
-          <h1 class="font-bold text-5xl">Explore the best camps on Earth.</h1>
-          <p class="pt-4 pb-4">
-            YelpCamp is a curated list of the best camping spots on Earth.
-            Unfiltered and Unbiased reviews
-          </p>
-          <div class="grid grid-flow-row gap-3">
-            <div class="flex gap-3">
-              <img src="/Assets/Checkmark.svg"/>
-              <p>Add your own camp suggestions.</p>
+    <div class="h-screen">
+        <div class="w-full h-fit p-5  md:block lg:hidden">
+          <img class=" hover:animate-bounce" src="../Assets/Logo.svg"  alt="Logo"/>
+        </div>
+        <div class="grid h-screen md:h-screen lg:h-screen grid-flow-row md:grid-flow-row lg:grid-cols-[1.5fr,_1fr]">
+          <div class="grid grid-cols-1 grid-flow-row lg:grid-rows-[_1fr_7fr] lg:items-center px-10 md:px-20 lg:px-40">
+            <div class="w-fit h-fit pt-10 hidden md:hidden lg:block items-start lg:justify-start">
+              <img class=" hover:animate-bounce" src="../Assets/Logo.svg"  alt="Logo"/>
             </div>
-            <div class="flex gap-3">
-              <img src="/Assets/Checkmark.svg"/>
-              <p>Leave reviews and experiences.</p>
+            <div class="lg:mt-0 md:mt-7 mt-7 flex flex-col gap-5">
+             <h1 class="relative ml9">
+                <span class="text-wrapper relative block overflow-hidden">
+                        <span class="letters custom-transform-origin block font-bold text-2xl md:text-3xl lg:text-5xl">Explore the best camps on Earth.</span>
+                </span></h1>
+              <p class="">
+                YelpCamp is a curated list of the best camping spots on Earth.
+                Unfiltered and Unbiased reviews
+              </p>
+  
+  
+              <ul class="flex flex-col list-inside">
+                <li class="flex items-center">
+                  <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> Add your own camp suggestions.
+                </li>
+                <li class="flex items-center">
+                  <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> Leave reviews and experiences.
+                </li>
+                <li class="flex items-center">
+                  <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> See locations for all camps.
+                </li>
+              </ul>
+              
+      
+              <button class="bg-black text-white text-sm font-medium w-44 h-12 rounded"><a href="searchPage.html">View Campgrounds</a></button>
+              <p>Partnered with:</p>
+              
+              <div class="grid grid-cols-3 items-center w-38">
+                <img src="../Assets/Airbnb.svg" alt="Airbnb"/>
+                <img src="../Assets/Booking.svg" alt="Booking"/>
+                <img src="../Assets/Plum Guide.svg" alt="Plum guide"/>
+              </div>
             </div>
-            <div class="flex gap-3">
-              <img src="/Assets/Checkmark.svg"/>
-              <p>See locations for all camps.</p>
-            </div>
-
-            <!-- BUTTON -->
-            <button
-            id="gotosearch" class="bg-black text-white text-sm font-medium w-44 h-12 rounded">View Campgrounds
-            </button>
           </div>
-
-        </div>
-
-        
-
-        <p>Partnered with:</p>
-
-        <div class="flex">
-          <img src="../Assets/Airbnb.svg" />
-          <img src="../Assets/Booking.svg" />
-          <img src="../Assets/Plum Guide.svg" />
+  
+          <div class="h-fit md:h-fit lg:h-screen  order-first md:order-first lg:order-last">
+            <img class="h-3/5 w-full lg:h-screen" src="../Assets/Hero Image.jpg"  alt="Hero image"/>
+          </div>
         </div>
       </div>
-
-      <div class="lg:w-1/2 w-full lg:flex-row flex-col flex lg:justify-end lg:order-none md:order-first order-first">
-        <div>
-          <img
-          class="w-14 lg:hidden md:visible visible hover:animate-bounce"
-          src="../Assets/Logo.svg"
-        />
-        </div>
-        <div class="w-full lg:w-4/5">
-          <img src="../Assets/Hero Image.jpg" />
-        </div>
-      </div>
-    </div>
-
-    <script src="./viewButton.js"></script>
-  </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="./viewButton.js"></script>
+  </body>
 </html>
