@@ -155,3 +155,24 @@ const campData = [
     campingReviews.unshift(newDetail);
     renderCards(campingReviews);
   })
+
+
+
+
+ // JavaScript to toggle the menu on small screens
+ const hamburgerIcon = document.getElementById('hamburger_icon');
+ const menuLists = document.getElementById('menu-lists');
+ const closeIcon = document.getElementById('close_icon')
+
+ hamburgerIcon.addEventListener('click', () => {
+ menuLists.classList.toggle('hidden');
+     hamburgerIcon.classList.toggle('hidden');
+ });
+
+ closeIcon.addEventListener('click', () => {
+      closeIcon.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      menuLists.classList.toggle('hidden');
+  });
+  
+  
