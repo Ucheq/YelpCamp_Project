@@ -32,13 +32,13 @@
         <div class="bg-gray-50 p-0 md:p-10 lg:p-10 flex justify-center items-center md:justify-start lg:justify-start lg:items-center ">
            <!-- Search Page Welcome card -->
             <div class="w-[95%] md:w-9/12 lg:w-1/4 grid grid-flow-row gap-1 ">
-                <h1 class="text-3xl font-bold">Welcome to YelpCamp!</h1>
-                <p class="">View our hand-picked campgrounds from all over the world or add your own.</p>
-                <div class="lg:flex flex-row gap-5">
-                    <input class="input p-4 w-full lg:w-48 md:w-32 rounded-xl" type="text" placeholder="&#xF002; Search for Camps" style="font-family:Arial, FontAwesome" />
+                <h1 class="text-3xl font-bold lg:w-full md:w-4/5 lg:mx-0 mx-auto">Welcome to YelpCamp!</h1>
+                <p class="lg:w-full w-4/5 lg:mx-0 mx-auto">View our hand-picked campgrounds from all over the world or add your own.</p>
+                <div class="lg:w-full w-4/5 lg:mx-0 mx-auto lg:flex flex-row gap-5">
+                    <input class="input p-4 w-full lg:w-48 md:w-32 rounded-xl lg:mb-0 mb-4" type="text" placeholder="&#xF002; Search for Camps" style="font-family:Arial, FontAwesome" />
                     <button id="btn" class=" bg-black md:w-32 lg:w-32 w-full text-white p-4 rounded-lg" type="button">Search</button>
                 </div>
-                <p class="underline cursor-pointer">Or add your own campground</p>
+                <p class="underline cursor-pointer lg:w-full w-4/5 lg:mx-0 mx-auto" id="addDetails">Or add your own campground</p>
             </div>
             <!-- <img src="/Assets/Chat Bubble.svg" alt="ghb"/> -->
         </div>
@@ -46,6 +46,18 @@
         <div id="card-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5 mt-20">
         </div>
 
+        <!-- div for popup to add card -->
+        <div id="popupContainer" class="popup">
+            <div class="popup-content">
+                <span class="close-button" id="closePopupButton">&times;</span>
+                <div class="flex flex-col">
+                    <input class="input p-2 mb-5 border-b-2 w-3/4 md:w-38 " placeholder="&#xF002; Name of camp-ground" style="font-family:Arial, FontAwesome" type="text" id="nameOfCampGround"/>
+                    <input class="input p-2 mb-5 border-b-2 w-3/4 md:w-38 " type="text" placeholder="&#xF002; Description of camp-ground" style="font-family:Arial, FontAwesome" id="description">
+                    <input type="file" id="imageOfCampGround" class="mb-5 ">
+                    <button id="addCamp" type="button" class="bg-black text-white rounded p-3">Add campGround</button>
+                </div>
+            </div>
+        </div>
         <div>
             <img src="../Assets/Logo.svg" alt="logo" class="mt-16">
         </div>
