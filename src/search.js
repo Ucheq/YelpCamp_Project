@@ -95,24 +95,36 @@ const campGrounds = [
   },
 ];
 
-const cardContainer = document.querySelector('#card-container');
-
 function generateCardHTML(camp) {
   return `<div class="w-100 grid grid-flow-row gap-2 border-solid border-2 p-3 input">
             <img class="rounded-lg w-full" src="${camp.image}" alt="${camp.name}"/>
             <h4 class="text-lg font-bold">${camp.name}</h4>
             <p class="text-slate-600">${camp.description}</p>
-            <button data-index="${camp.id}" class="view-button input p-3 font-bold hover:animate-pulse hover:bg-[#DAD7CD] hover:border-none"><a href="carddetails.html?id=${camp.id}">${camp.button}</a></button>
+            <a href="carddetails.html?id=${camp.id}" class="view-button text-center input p-3 font-bold hover:animate-pulse hover:bg-[#DAD7CD] hover:border-none">${camp.button}</a>
           </div>`;
+          //<button data-index="${camp.id}" class="view-button input p-3 font-bold hover:animate-pulse hover:bg-[#DAD7CD] hover:border-none"><a href="carddetails.html?id=${camp.id}">${camp.button}</a></button>
 }
+
+
+
+
+function renderData(data,functionMarkup) {
+  return data.map(functionMarkup).join('');
+}
+
+const cardContainer = document.querySelector('#card-container');
 
 function renderCards(camps) {
   const cardHTML = camps.map(generateCardHTML).join('');
   cardContainer.innerHTML = cardHTML;
+
 }
 
 renderCards(campGrounds);
 
+
+
+/* SEARCH BUTTON TO FILTER CAMPGROUNDS ON USER INPUT*/
 const searchBtn = document.querySelector('#btn');
 searchBtn.addEventListener('click', () => {
   const inputValue = document.querySelector('input[type="text"]').value.toLowerCase();
@@ -137,3 +149,30 @@ searchBtn.addEventListener('click', () => {
       hamburgerButton.classList.toggle('hidden');
       menuItems.classList.toggle('hidden');
   });
+
+
+
+
+
+
+
+
+
+
+
+  /*const viewButtons = document.querySelectorAll('.view-button');
+  viewButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+          const id = event.target.getAttribute('data-index');
+          const selectedCamp = campData.find(camp => camp.id == id);*/
+       /*This works if we want to render it in a single page*
+          if (selectedCamp) {
+              const detailedInfoHTML = generateCampInfoHTML(selectedCamp);
+              detailedInfoContainer.innerHTML = detailedInfoHTML;
+              //individualPage.classList.remove('hidden');
+              //searchPage.classList.add('hidden');
+              //detailedInfoContainer.classList.remove('hidden');
+
+          }
+      });
+  });*/

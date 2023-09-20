@@ -52,6 +52,7 @@ const campData = [
   
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get('id');
+  
   //Using Array Map method
   const selectedCamp = campData.find(camp => camp.id == id);
   
