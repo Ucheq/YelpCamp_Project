@@ -9,10 +9,10 @@
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="bg-gray-50 w-4/5 sm:mx-auto mx-auto py-4 px-6 my-3 flex md:justify-between lg:justify-between items-center">
-        <div class="flex items-center">
-            <img src="../Assets/Logo.svg" alt="Logo" class="w-1/2 md:w-4/5 lg:w-full h-8">
-            <a href="#" class="ml-4 text-ash hover:no-underline hover:text-ash hidden lg:block">Home</a>
+    <nav class="bg-gray-50 w-4/5  sm:mx-auto mx-auto top-0 py-4 px-6 my-3 flex sticky md:justify-between lg:justify-between justify-between items-center">
+        <div class="flex items-center ">
+            <img src="../Assets/Logo.svg" alt="Logo" class="w-1/2 md:w-4/5 lg:w-full h-8 hover:animate-bounce">
+            <a href="index.html" class="ml-4 text-ash hover:no-underline hover:animate-bounce hidden lg:block">Home</a>
         </div>
         <!-- <button id="hamburger-menu" class="lg:hidden">
             ☰  Hamburger icon 
@@ -20,8 +20,9 @@
         <img src="../Assets/Hamburger Menu.svg" id="hamburger-menu" class="lg:hidden" alt="hamburger-menu"/>
 
         <div id="menu-items" class="hidden lg:text-lg md:text-[15px] text-[10px] lg:flex lg:flex-row items-center space-x-1 lg:space-x-4">
-            <a href="#" class="text-ash hover:no-underline hover:text-ash mr-1 md:mr-4 lg:mr-4">Login</a>
-            <button class="bg-black text-white py-2 px-4 hover:bg-opacity-80">Create Account</button>
+            <img src="../Assets/Close.svg" id="close" class="lg:hidden cursor-pointer" alt="close"/>
+            <a href="#" class="text-ash hover:no-underline hover:animate-bounce hover:text-ash mr-1 md:mr-4 lg:mr-4">Login</a>
+            <button class="bg-black text-white py-2 px-4 hover:animate-bounce hover:bg-opacity-80">Create Account</button>
         </div>
     </nav>
 
@@ -43,6 +44,10 @@
         </div>
         <!-- Search page map galerry using grid -->
         <div id="card-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-5 mt-20">
+        </div>
+
+        <div>
+            <img src="../Assets/Logo.svg" alt="logo" class="mt-16">
         </div>
     </section>
     

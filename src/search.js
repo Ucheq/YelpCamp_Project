@@ -125,8 +125,15 @@ searchBtn.addEventListener('click', () => {
  // JavaScript to toggle the menu on small screens
  const hamburgerButton = document.getElementById('hamburger-menu');
  const menuItems = document.getElementById('menu-items');
+ const closeIcon = document.getElementById('close')
 
  hamburgerButton.addEventListener('click', () => {
  menuItems.classList.toggle('hidden');
      hamburgerButton.classList.toggle('hidden');
  });
+
+ closeIcon.addEventListener('click', () => {
+      closeIcon.classList.toggle('hidden');
+      hamburgerButton.classList.toggle('hidden');
+      menuItems.classList.toggle('hidden');
+  });
