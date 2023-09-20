@@ -10,17 +10,21 @@
 </head>
 <body>
        <!-- nav bar -->
-    <nav class="bg-gray-100 py-4 px-6 flex justify-between w-[90%] lg:w-[56%] mx-auto items-center">
-        <div class="flex items-center">
-            <img src="../Assets/Logo.svg" alt="Logo" class="h-8">
-            <a href="#" class="ml-4 text-ash hover:no-underline hover:text-ash hidden lg:block">Home</a>
+    <nav class="bg-gray-50 w-4/5 sm:mx-auto mx-auto py-4 top-0 px-6 my-3 flex sticky md:justify-between lg:justify-between justify-between items-center">
+        <div class="flex  items-center">
+            <img src="../Assets/Logo.svg" alt="Logo" class="w-1/2 md:w-4/5 lg:w-full h-8 hover:animate-bounce">
+            <a href="index.html" class="ml-4 text-ash hover:no-underline hover:animate-bounce hover:text-ash hidden lg:block">Home</a>
         </div>
-        <button id="hamburger-menu" class="lg:hidden">
-            ☰ <!-- Hamburger icon -->
-        </button>
-        <div id="menu-items" class="hidden lg:flex items-center space-x-4">
-            <a href="#" class="text-ash hover:no-underline hover:text-ash mr-4">Login</a>
-            <button class="bg-black text-white py-2 px-4 hover:bg-opacity-80">Create Account</button>
+        
+    
+            <img src="../Assets/Hamburger Menu.svg" id="hamburger_icon" class="lg:hidden " alt="hamburger_icon"/>
+     
+        
+
+        <div id="menu-lists" class="hidden lg:text-lg md:text-[15px] text-[10px] lg:flex lg:flex-row items-center space-x-1 lg:space-x-4">
+            <img src="../Assets/Close.svg" id="close_icon" class="lg:hidden cursor-pointer" alt="close_icon"/>
+            <a href="#" class="text-ash hover:no-underline hover:animate-bounce hover:text-ash mr-1 md:mr-4 lg:mr-4">Login</a>
+            <button class="bg-black text-white py-2 px-4 hover:animate-bounce  hover:bg-opacity-60">Create Account</button>
         </div>
     </nav>
 
@@ -40,6 +44,10 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div>
+                <img src="../Assets/Logo.svg" alt="logo" class="mt-16">
             </div>
         </section>
     </div>
