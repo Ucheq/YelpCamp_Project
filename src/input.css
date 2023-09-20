@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* custom styling for input and popup */
 .input{
     border: 1px solid lightgray;
 }
@@ -9,6 +9,6 @@
     z-index: 1;
 }
 
-.custom-transform-origin {
-  transform-origin: 50% 100%;
-}
+/* .custom-transform-origin {
+  transform-origin: 100% 0%;
+} */

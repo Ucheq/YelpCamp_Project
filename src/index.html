@@ -3,61 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YelpCamp_Campgrounds</title>
+    <title>YelpCamp landing page</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <!-- LANDING PAGE -->
+
+  <!-- used hide and seek method here -->
     <div class="h-screen">
-        <div class="w-full h-fit p-5  md:block lg:hidden">
-          <img class=" hover:animate-bounce" src="../Assets/Logo.svg"  alt="Logo"/>
-        </div>
-        <div class="grid h-screen md:h-screen lg:h-screen grid-flow-row md:grid-flow-row lg:grid-cols-[1.5fr,_1fr]">
-          <div class="grid grid-cols-1 grid-flow-row lg:grid-rows-[_1fr_7fr] lg:items-center px-10 md:px-20 lg:px-40">
-            <div class="w-fit h-fit pt-10 hidden md:hidden lg:block items-start lg:justify-start">
-              <img class=" hover:animate-bounce" src="../Assets/Logo.svg"  alt="Logo"/>
-            </div>
-            <div class="lg:mt-0 md:mt-7 mt-7 flex flex-col gap-5">
-             <h1 class="relative ml9">
-                <span class="text-wrapper relative block overflow-hidden">
-                        <span class="letters custom-transform-origin block font-bold text-2xl md:text-3xl lg:text-5xl">Explore the best camps on Earth.</span>
-                </span></h1>
-              <p class="">
-                YelpCamp is a curated list of the best camping spots on Earth.
-                Unfiltered and Unbiased reviews
-              </p>
-  
-  
-              <ul class="flex flex-col list-inside">
-                <li class="flex items-center">
-                  <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> Add your own camp suggestions.
-                </li>
-                <li class="flex items-center">
-                  <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> Leave reviews and experiences.
-                </li>
-                <li class="flex items-center">
-                  <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> See locations for all camps.
-                </li>
-              </ul>
-              
       
-              <button class="bg-black text-white text-sm font-medium w-44 h-12 rounded"><a href="searchPage.html">View Campgrounds</a></button>
-              <p>Partnered with:</p>
-              
-              <div class="grid grid-cols-3 items-center w-38">
-                <img src="../Assets/Airbnb.svg" alt="Airbnb"/>
-                <img src="../Assets/Booking.svg" alt="Booking"/>
-                <img src="../Assets/Plum Guide.svg" alt="Plum guide"/>
-              </div>
+      <div class="w-full h-fit p-5  md:block lg:hidden">
+        <img class=" hover:animate-bounce" src="../Assets/Logo.svg"  alt="Logo"/>
+      </div>
+      <div class="lg:h-screen h-fit grid grid-flow-row md:grid-flow-row lg:grid-flow-col">
+        <div class="lg:h-screen md:h-[60%] h-[60%] grid grid-cols-1 grid-flow-row lg:grid-rows-[_1fr_7fr] lg:items-center px-10 md:px-20 lg:px-40">
+          <div class="w-4/5 mx-auto h-fit pt-10 hidden md:hidden lg:block items-start lg:justify-start">
+            <img class=" hover:animate-bounce" src="../Assets/Logo.svg"  alt="Logo"/>
+          </div>
+          <div class="flex flex-col w-[80%] mx-auto gap-5">
+            <!-- <h1 class="font-bold text-2xl md:text-3xl lg:text-5xl">Explore the best camps on Earth.</h1> -->
+            <h1 class="font-[900] ml9">
+              <span class="text-wrapper overflow-hidden">
+                      <span class="letters custom-transform-origin block font-bold w-[70%] text-2xl md:text-3xl lg:text-5xl">Explore the best camps on Earth.</span>
+              </span></h1>
+            <p class="w-4/5 text-lg">
+              YelpCamp is a curated list of the best camping spots on Earth.
+              Unfiltered and Unbiased reviews
+            </p>
+
+            <ul class="flex flex-col text-lg list-inside">
+              <li class="flex items-center">
+                <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> Add your own camp suggestions.
+              </li>
+              <li class="flex items-center">
+                <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> Leave reviews and experiences.
+              </li>
+              <li class="flex items-center">
+                <img src="../Assets/Checkmark.svg" alt="Checkmark icon" class="w-4 h-4 mr-2" /> See locations for all camps.
+              </li>
+            </ul>
+            
+    
+            <button id="gotosearch" class="bg-black text-white text-sm font-medium w-44 h-12 rounded">View Campgrounds</button>
+            <p>Partnered with:</p>
+            
+            <div class="grid grid-cols-3 items-center w-38">
+              <img src="../Assets/Airbnb.svg" alt="Airbnb"/>
+              <img src="../Assets/Booking.svg" alt="Booking"/>
+              <img src="../Assets/Plum Guide.svg" alt="Plum guide"/>
             </div>
           </div>
-  
-          <div class="h-fit md:h-fit lg:h-screen  order-first md:order-first lg:order-last">
-            <img class="h-3/5 w-full lg:h-screen" src="../Assets/Hero Image.jpg"  alt="Hero image"/>
+          <!-- FORM PART -->
+          <div id="form-container" class="text-input hidden">
+            <form class="form">
+              <label for="cardholder-name">CARDHOLDER NAME</label>
+              <input id="cardholder-name" type="text" name="" id="" placeholder=" e.g. Jane Appleseed">
+              <label for="card-number">CARD NUMBER</label>
+              <input id="card-number-detail" type="text" placeholder="e.g. 1234 5678 9123 0000">
+              <label id="date" for="">EXP. DATE (MM/YY)</label>
+              <button>Confirm</button>
+            </form>
           </div>
+        </div>
+        <!-- IMAGE PART -->
+        <div class="h-fit md:h-fit lg:h-screen w-full flex order-first md:order-first lg:order-last">
+          <img class="h-3/5 w-full md:w-full lg:w-full lg:h-full" src="../Assets/Hero Image.jpg"  alt="Hero image"/>
         </div>
       </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="./viewButton.js"></script>
-  </body>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./viewButton.js"></script>
+</body>
 </html>
