@@ -151,7 +151,44 @@ searchBtn.addEventListener('click', () => {
   });
 
 
+const popup = document.querySelector('#popupContainer');
+const openPopupButton = document.querySelector('#addDetails');
+const closePopupButton = document.querySelector('#closePopupButton');
+const submitNewDetails = document.querySelector('#addCamp');
 
+function openPopup() {
+  popup.style.display = 'block';
+}
+
+function closePopup() {
+  popup.style.display = 'none';
+}
+
+openPopupButton.addEventListener('click', openPopup);
+closePopupButton.addEventListener('click', closePopup);
+
+window.addEventListener('click', (event) => {
+  if (event.target === popup) {
+      closePopup();
+  }
+});
+submitNewDetails.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const nameDetails = document.querySelector('#nameOfCampGround').value;
+  const descriptionDetails = document.querySelector('#description').value;
+  const imageDetails = document.querySelector('#imageOfCampGround').value;
+
+  const newDetail = {
+      name: nameDetails,
+      description: descriptionDetails,
+      image: imageDetails,
+      button: "View Campground"
+  };
+
+  campGrounds.unshift(newDetail);
+  renderCards(campGrounds);
+});
 
 
 
