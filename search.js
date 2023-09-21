@@ -55,42 +55,42 @@ const campGrounds = [
     id: 1,
     name: "Mount Ulap",
     description: "Nestled deep in the forest, Pine Ridge Campground offers a serene escape for nature enthusiasts. Enjoy hiking trails, birdwatching, and peaceful nights under the starry sky.",
-    image: "../Assets/Camp-Images/Compressed-Images/MountUlap.jpg",
+    image: "./Assets/Camp-Images/Compressed-Images/MountUlap.jpg",
     button: "View Campground"
   },
   {
     id: 2,
     name: "Calaguas Island",
     description: "Situated on the shores of a pristine mountain lake, Lakeview Campsite is a water lover's paradise. Fish, swim, and kayak during the day, and gather around the campfire at night.",
-    image: "../Assets/Camp-Images/Compressed-Images/CalaguasIsland.jpg",
+    image: "./Assets/Camp-Images/Compressed-Images/CalaguasIsland.jpg",
     button: "View Campground"
   },
   {
     id: 3,
     name: "Onay Beach",
     description: "Experience the breathtaking beauty of the mountains at Mountain Haven Retreat. This campground is a haven for hikers, with numerous trails that lead to panoramic vistas.",
-    image: "../Assets/Camp-Images/Compressed-Images/OnayBeach.jpg",
+    image: "./Assets/Camp-Images/Compressed-Images/OnayBeach.jpg",
     button: "View Campground"
   },
   {
     id: 4,
     name: "Seven Sisters Waterfall",
     description: "Camp along the scenic riverbanks at Riverbend Campground. Listen to the soothing sounds of the river as you relax by your campfire and enjoy water activities like tubing and fishing.",
-    image: "../Assets/Camp-Images/Compressed-Images/SevenSistersWaterfall.jpg",
+    image: "./Assets/Camp-Images/Compressed-Images/SevenSistersWaterfall.jpg",
     button: "View Campground"
   },
   { 
     id:5,
     name: "Latik Riverside",
     description: "Discover the wonders of the desert at Desert Oasis Campground. With its unique landscapes and cactus-studded terrain, it's a perfect spot for stargazing and off-roading adventures.",
-    image: "../Assets/Camp-Images/Compressed-Images/LatikRiverside.jpg",
+    image: "./Assets/Camp-Images/Compressed-Images/LatikRiverside.jpg",
     button: "View Campground"
   },
   { 
     id: 6,
     name: "Buloy Springs",
     description: "Seaside Cove Campground offers a coastal camping experience with breathtaking ocean views. Explore tide pools, go beachcombing, and fall asleep to the sound of crashing waves.",
-    image: "../Assets/Camp-Images/Compressed-Images/BuloySprings.jpg",
+    image: "./Assets/Camp-Images/Compressed-Images/BuloySprings.jpg",
     button: "View Campground"
   },
 ];

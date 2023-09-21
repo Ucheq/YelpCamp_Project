@@ -2,7 +2,7 @@
 const campData = [
     {
       id: 1,
-      images: "../Assets/Camp-Images/Compressed-Images/MountUlap.jpg",
+      images: "./Assets/Camp-Images/Compressed-Images/MountUlap.jpg",
       name: "Mount Ulap",
       amount: "$104.99/night",
       description: "Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Philippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.",
@@ -10,7 +10,7 @@ const campData = [
     },
     { 
       id: 2,
-      images: "../Assets/Camp-Images/Compressed-Images/CalaguasIsland.jpg",
+      images: "./Assets/Camp-Images/Compressed-Images/CalaguasIsland.jpg",
       name: "Calaguas Island",
       amount: "$89.99/night",
       description: "This serene campground is nestled in the heart of the forest, offering a peaceful retreat for nature enthusiasts. Enjoy hiking and birdwatching during your stay.",
@@ -18,7 +18,7 @@ const campData = [
     },
     { 
       id: 3,
-      images: "../Assets/Camp-Images/Compressed-Images/OnayBeach.jpg",
+      images: "./Assets/Camp-Images/Compressed-Images/OnayBeach.jpg",
       name: "Onay Beach",
       amount: "$124.99/night",
       description: "Experience the tranquility of this lakeside campground. You can fish, kayak, and stargaze by the campfire. Perfect for a family getaway.",
@@ -26,7 +26,7 @@ const campData = [
     },
     { 
       id: 4,
-      images: "../Assets/Camp-Images/Compressed-Images/SevenSistersWaterfall.jpg",
+      images: "./Assets/Camp-Images/Compressed-Images/SevenSistersWaterfall.jpg",
       name: "Seven Sisters Waterfall",
       amount: "$95.99/night",
       description: "Find solace in this secluded forest haven. Surrounded by towering trees, it's an ideal spot for those seeking a peaceful escape.",
@@ -34,7 +34,7 @@ const campData = [
     },
     { 
       id: 5,
-      images: "../Assets/Camp-Images/Compressed-Images/LatikRiverside.jpg",
+      images: "./Assets/Camp-Images/Compressed-Images/LatikRiverside.jpg",
       name: "Latik Riverside",
       amount: "$119.99/night",
       description: "Enjoy breathtaking water views from this campsite. Hike to the nearby peaks and be rewarded with stunning vistas.",
@@ -42,7 +42,7 @@ const campData = [
     },
     {
       id: 6,
-      images: "../Assets/Camp-Images/Compressed-Images/BuloySprings.jpg",
+      images: "./Assets/Camp-Images/Compressed-Images/BuloySprings.jpg",
       name: "Bulloy Springs",
       amount: "$149.99/night",
       description: "This coastal campground offers beachfront access. Listen to the soothing sound of waves as you relax in your tent or RV.",
