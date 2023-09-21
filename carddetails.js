@@ -110,7 +110,7 @@ const campData = [
   }
   
   
-  const btn = `<div class="flex justify-end pt-4 items-center"><button id="addReviewBtn" class="bg-black text-lg text-white flex gap-5 p-3"><img src="../Assets/Chat Bubble.svg" alt="chat bubble"/><p>Leave a review</p></button></div>`;
+  const btn = `<div class="flex justify-end pt-4 items-center"><button id="addReviewBtn" class="bg-black text-lg text-white flex gap-5 p-3"><img src="./Assets/Chat Bubble.svg" alt="chat bubble"/><p>Leave a review</p></button></div>`;
   //popup for adding reviews
   function renderCards(camps) {
       const groundInfoHTML = camps.map(generateReviewHTML).join('');
