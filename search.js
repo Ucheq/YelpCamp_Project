@@ -138,17 +138,27 @@ searchBtn.addEventListener('click', () => {
  const hamburgerButton = document.getElementById('hamburger-menu');
  const menuItems = document.getElementById('menu-items');
  const closeIcon = document.getElementById('close')
+ const menu = document.getElementById('menu');
+ const close = document.getElementById('closer')
 
  hamburgerButton.addEventListener('click', () => {
- menuItems.classList.toggle('hidden');
-     hamburgerButton.classList.toggle('hidden');
+ menuItems.style.display = 'none';
+     hamburgerButton.style.display ='none';
+     menu.style.display ='block';
  });
 
- closeIcon.addEventListener('click', () => {
-      closeIcon.classList.toggle('hidden');
-      hamburgerButton.classList.toggle('hidden');
-      menuItems.classList.toggle('hidden');
-  });
+ close.addEventListener('click', () => {
+  // close.style.display = 'block'? hamburgerButton.style.display ='block':hamburgerButton.style.display ='block';
+  // hamburgerButton.style.display ='block'? close.style.display = 'none':close.style.display = 'block';
+  menu.style.display ='none';
+  hamburgerButton.style.display ='block';
+});
+
+//  closeIcon.addEventListener('click', () => {
+//       closeIcon.classList.toggle('hidden');
+//       hamburgerButton.classList.toggle('hidden');
+//       menuItems.classList.toggle('hidden');
+//   });
 
 
 const popup = document.querySelector('#popupContainer');
